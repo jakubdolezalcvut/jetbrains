@@ -1,0 +1,6 @@
+[*.{kt,kts}]
+indent_size = 4
+insert_final_newline = true
+
+# Disable the rule enforcing SCREAMING_SNAKE_CASE for constants
+ktlint_standard_property-naming = disabled

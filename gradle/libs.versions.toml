@@ -1,0 +1,29 @@
+[versions]
+koinBom = "4.1.0-RC1"
+kotlinxCoroutines = "1.10.2"
+kotest = "6.0.0.M4"
+kotlin = "2.2.20"
+kotlinLogging = "7.0.7"
+ktlint = "13.1.0"
+logback = "1.5.18"
+mockk = "1.14.6"
+slf4j = "2.0.17"
+turbine = "1.2.1"
+
+[libraries]
+koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koinBom" }
+koin-core = { group = "io.insert-koin", name="koin-core" }
+koin-test = { group = "io.insert-koin", name="koin-test" }
+kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name="kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name="kotlinx-coroutines-swing", version.ref = "kotlinxCoroutines" }
+kotest-assertions-core = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotest" }
+kotest-runner = { group = "io.kotest", name = "kotest-runner-junit5", version.ref = "kotest" }
+kotlin-logging = { group = "io.github.oshai", name = "kotlin-logging-jvm", version.ref = "kotlinLogging" }
+logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+slf4j = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j" }
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
