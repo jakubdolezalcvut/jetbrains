@@ -36,7 +36,7 @@ class ExcelApp : JFrame(), KoinComponent {
             setShowGrid(true)
             gridColor = Color.LIGHT_GRAY
 
-            setDefaultRenderer(Any::class.java, FadingCellRenderer())
+            setDefaultRenderer(Any::class.java, ResultCellRenderer())
             setDefaultEditor(Any::class.java, ExpressionCellEditor())
         }
         title = "Excel"

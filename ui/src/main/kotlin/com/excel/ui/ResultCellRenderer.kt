@@ -7,13 +7,11 @@ import java.util.Locale
 import javax.swing.JTable
 import javax.swing.table.DefaultTableCellRenderer
 
-internal class FadingCellRenderer(
+internal class ResultCellRenderer(
     locale: Locale = Locale.getDefault(),
 ) : DefaultTableCellRenderer() {
 
     private val formatter = CalculatedResultFormatter(locale)
-
-    private val fadeDuration = 500L // ms
 
     override fun getTableCellRendererComponent(
         table: JTable,
